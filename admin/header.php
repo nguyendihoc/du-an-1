@@ -45,7 +45,7 @@
       <div class="nav2">
         <ul class="menu">
           <li><a href="index.php">Trang chủ</a></li>
-          <li><a href="index.php?act=listdm">Danh mục sản phẩm</a></li>
+          <li><a href="index.php?act=adddm">Quản lý Danh mục</a></li>
           <li>
             <a href="index.php?act=addsp">Quản lý Sản phẩm</a>
             <!-- <ul class="sub-menu">

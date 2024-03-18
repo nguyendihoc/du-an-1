@@ -7,11 +7,12 @@
     <form action="index.php?act=adddm" method="post">
       <div class="form-group">
         Mã danh mục: <br>
-        <input type="text" name="madm" id="" placeholder="Nhập mã danh mục">
+        <input type="text" name="ma_danhmuc" id="" disabled>
       </div>
       <div class="form-group">
         Tên danh mục: <br>
-        <input type="text" name="tendm" id="" placeholder="Nhập tên danh mục">
+        <input type="text" name="ten_danhmuc" id="" placeholder="Nhập tên danh mục">
+        <span style="color: red"><?= isset($error['ten_danhmuc']) ? $error['ten_danhmuc'] : ''  ?></span>
       </div>
       <div class="form-group">
         <input type="submit" value="Thêm mới" name="themmoi">
