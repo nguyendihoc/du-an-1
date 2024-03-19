@@ -1,11 +1,8 @@
 <?php 
-
 if(is_array($dm)){
     extract($dm);
 }
-
 ?>
-
 <!-- thêm danh mục -->
 <section class="khungaddm">
     <div class="tieude">
@@ -19,6 +16,7 @@ if(is_array($dm)){
       <div class="form-group">
         Tên Danh mục <br>
         <input type="text" name="ten_danhmuc" value="<?php if(isset($ten_danhmuc)&&($ten_danhmuc!="")) echo $ten_danhmuc;?>">
+       
       </div>
       <div class="form-group">
         <input type="hidden" name="ma_danhmuc" value="<?php if(isset($ma_danhmuc)&&($ma_danhmuc>0)) echo $ma_danhmuc;?>">
@@ -30,6 +28,5 @@ if(is_array($dm)){
       if (isset($thongbao) && ($thongbao != ""))
         echo $thongbao; ?>
     </form>
-    </table>/
 </section>
 <!-- end thêm danh mục -->

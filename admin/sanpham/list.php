@@ -3,8 +3,9 @@
     <div class="tieude">
         <h1>Danh sách sản phẩm</h1>
     </div>
+    <div class="form-group">
     <form action="index.php?act=listsp" method="post">
-        <input type="text" name="kyw">
+        <input type="text" name="kyw" placeholder="Tìm kiếm" id="">
         <select name="ma_danh_muc" id="">
             <option value="0" selected>Tất cả</option>
             <?php
@@ -14,8 +15,8 @@
             }
             ?>
         </select>
-        <input type="submit" name="listok" value="Tiếm kiếm">
-    </form>
+        <input type="submit" name="listok" value="Tìm kiếm">
+    </form></div>
     <table class="table">
         <tr>
             <th>Mã Sản phẩm</th>

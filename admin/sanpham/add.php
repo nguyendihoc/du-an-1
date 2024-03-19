@@ -8,7 +8,7 @@
         <form action="index.php?act=addsp" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 Danh mục <br>
-                <select name="ma_danh_muc">
+                <select class="select" name="ma_danh_muc">
                     <?php
                     foreach ($listdanhmuc as $danhmuc) {
                         extract($danhmuc);
@@ -24,14 +24,17 @@
             <div class="form-group">
                 Tên sản phẩm: <br>
                 <input type="text" name="ten_sanpham" id="" placeholder="Nhập tên danh mục">
+                <span style="color: red"><?= isset($error['ten_sanpham']) ? $error['ten_sanpham'] : ''  ?></span>
             </div>
             <div class="form-group">
                 Hình sản phẩm: <br>
                 <input type="file" name="hinh" id="" placeholder="chọn ảnh">
+                <span style="color: red"><?= isset($error['hinh']) ? $error['hinh'] : ''  ?></span>
             </div>
             <div class="form-group">
-            Mô tả<br>
-        <textarea name="mota" cols="30" rows="10"></textarea>
+                Mô tả<br>
+                <textarea name="mota" cols="30" rows="10"></textarea>
+                <span style="color: red"><?= isset($error['mota']) ? $error['mota'] : ''  ?></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Thêm mới" name="themmoi">

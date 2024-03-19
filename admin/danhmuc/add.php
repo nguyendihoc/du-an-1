@@ -7,7 +7,7 @@
     <form action="index.php?act=adddm" method="post">
       <div class="form-group">
         Mã danh mục: <br>
-        <input type="text" name="ma_danhmuc" id="" disabled>
+        <input type="text" name="ma_danhmuc" id="" disabled placeholder="Mã tự động tăng">
       </div>
       <div class="form-group">
         Tên danh mục: <br>

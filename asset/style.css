@@ -98,7 +98,7 @@ nav ul li {
 /* menu con */
 .nav2 .sub-menu{
     display: none; 
-    width: 80px;
+    width: 100px;
     height: auto;
     background-color: #333;
     position: absolute;
@@ -127,7 +127,7 @@ nav ul li {
 .cartlogin{
     float: right;
     padding: 4px 15px;
-    margin-left: 393px;
+    margin-left: 375px;
 }
 .cartlogin a{
     text-decoration: none;
@@ -175,7 +175,8 @@ nav ul li {
 .khungaddm .form-group input[type="submit"],
 .khungaddm .form-group input[type="reset"],
 .khungaddm .form-group input[type="button"],
-.table input[type="button"]{
+.table input[type="button"],
+.form-group select{
     border-radius: 5px;
     padding: 5px 10px;
     background-color: white;
