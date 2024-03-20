@@ -27,7 +27,7 @@ function loadall_sanpham($kyw = "", $ma_danh_muc = 0)
 }
 function loadall_sanpham_home()
 {
-    $sql = "SELECT * FROM sanpham WHERE 1 order by ma_sanpham desc limit 0,9";
+    $sql = "SELECT * FROM sanpham WHERE 1 order by ma_sanpham desc limit 0,10";
     $listsanpham = pdo_query($sql);
     return $listsanpham;
 }
@@ -36,7 +36,7 @@ function loadall_sanpham_home()
 function load_ten_dm($ma_danh_muc)
 {
     if ($ma_danh_muc >0) {
-        $sql = "SELECT * FROM danhmuc WHERE id =" . $ma_danh_muc;
+        $sql = "SELECT * FROM danhmuc WHERE ma_danh_muc =" . $ma_danh_muc;
         $dm = pdo_query_one($sql);
         extract($dm);
         return $ten_danhmuc;

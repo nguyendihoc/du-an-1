@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../asset/style.css">
-  <title>Trang ADMIN</title>
+  <title>TRANG QUẢN TRỊ ADMIN</title>
   <link rel="stylesheet" href="../asset/fontawesome-free-6.5.1-web/css/all.css" />
 </head>
 
@@ -16,7 +16,7 @@
       <nav>
         <ul>
           <li>
-            <a href="#"><img height="65" src="../image/logo.png" alt="" /></a>
+            <a href="#"><img height="65" src="../images/logo.png" alt="" /></a>
           </li>
         </ul>
         <div class="search-bar">
@@ -44,7 +44,8 @@
       <!-- nav2 -->
       <div class="nav2">
         <ul class="menu">
-          <li><a href="index.php">Trang chủ</a></li>
+          
+          <li><a href="../index.php">Trở về trang khách hàng</a></li>
           <li><a href="index.php?act=adddm">Quản lý Danh mục</a></li>
           <li>
             <a href="index.php?act=addsp">Quản lý Sản phẩm</a>
